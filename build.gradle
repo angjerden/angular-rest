@@ -24,7 +24,12 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile("junit:junit")
+    compile "joda-time:joda-time:2.2"
 }
 task wrapper(type: Wrapper) {
     gradleVersion = '1.11'
+}
+jar {
+    baseName = 'angular-rest'
+    version = '0.1.0'
 }
