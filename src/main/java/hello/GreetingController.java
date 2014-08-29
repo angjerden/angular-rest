@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by anders on 28.08.14.
- * Based on the Spring Guide: "Building a RESTful Web Service,
+ * Based on the Spring Guide: "Building a RESTful Web Service",
  * found at: https://spring.io/guides/gs/rest-service/
  */
 @RestController
