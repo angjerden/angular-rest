@@ -2,6 +2,9 @@ package hello;
 
 /**
  * Created by anders on 28.08.14.
+ *
+ * Based on the Spring Guide: "Building a RESTful Web Service,
+ * found at: https://spring.io/guides/gs/rest-service/
  */
 public class Greeting {
     private final long id;

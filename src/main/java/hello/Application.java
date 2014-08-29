@@ -6,6 +6,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Created by anders on 29.08.14.
+ *
+ * Based on the Spring Guide: "Building a RESTful Web Service,
+ * found at: https://spring.io/guides/gs/rest-service/
  */
 @ComponentScan
 @EnableAutoConfiguration
