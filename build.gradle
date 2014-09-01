@@ -25,7 +25,15 @@ repositories {
     maven { url "http://repo.spring.io/libs-release" }
 }
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: "spring-boot-starter-tomcat"
+    }
+    compile("org.springframework.boot:spring-boot-starter-jetty")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("com.fasterxml.jackson.core:jackson-databind")
+    compile("com.mangofactory:swagger-springmvc:0.6.5") {
+        exclude group: 'org.slf4j', module: 'slf4j-log4j12'
+    }
     testCompile("junit:junit")
     compile "joda-time:joda-time:2.2"
 }

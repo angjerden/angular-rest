@@ -1,5 +1,7 @@
 package hello;
 
+import org.springframework.stereotype.Component;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -14,6 +16,7 @@ import java.io.IOException;
  *
  * Based on https://spring.io/guides/gs/rest-service-cors/
  */
+@Component
 public class SimpleCORSFilter implements Filter {
 
     public void doFilter(ServletRequest req,
